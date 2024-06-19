@@ -7,30 +7,14 @@ This project serves as a template and example for the CUDA at Scale for the Ente
 The project demonstrates basic image processing tasks using OpenCV and CUDA, aimed at resizing images from an input folder (`data/input_images/`) and saving the processed images to an output folder (`data/output_images/`). The example script provided (`image_processing.py`) reads images, resizes them to 256x256 pixels using CUDA-accelerated functions, and saves them using OpenCV.
 
 ## Code Organization
-
-```bin/```
-This folder should hold all binary/executable code that is built automatically or manually. Executable code should have the .exe extension or a programming language-specific extension.
-
-```data/```
-This folder should hold all example data in any format. If the original data is rather large or can be brought in via scripts, this can be left blank in the repository, so that it doesn't require major downloads when all that is desired is the code/structure.
-
-```lib/```
-Any libraries that are not installed via the Operating System-specific package manager should be placed here, so that it is easier for inclusion/linking.
-
-```src/```
-The source code should be placed here in a hierarchical fashion, as appropriate.
-
-```README.md```
-This file should hold the description of the project so that anyone cloning or deciding if they want to clone this repository can understand its purpose to help with their decision.
-
-```INSTALL```
-This file should hold the human-readable set of instructions for installing the code so that it can be executed. If possible, it should be organized around different operating systems, so that it can be done by as many people as possible with different constraints.
-
-```Makefile or CMakeLists.txt or build.sh```
-There should be some rudimentary scripts for building your project's code in an automatic fashion.
-
-```run.sh```
-An optional script used to run your executable code, either with or without command-line arguments.
+```bin/:``` Directory for binary/executable code.
+```data/:``` Directory for example data. Contains input_images/ and output_images/.
+```lib/:``` Directory for additional libraries.
+```src/:``` Directory for source code. Contains image_processing.py.
+```README.md:``` This file, providing project overview and instructions.
+```INSTALL:``` Installation instructions for the project.
+```Makefile or CMakeLists.txt or build.sh:``` Scripts for building the project.
+```run.sh:``` Script to run the executable code or scripts.
 
 ## Installation
 
@@ -57,18 +41,15 @@ Navigate to the project directory and run the script image_processing.py:
 
 ```python3 src/image_processing.py```
 This script reads images from data/input_images/, resizes them to 256x256 pixels using CUDA-accelerated functions, and saves the resized images to data/output_images/.
+## Output
+
 Explore Output:
+![Screenshot 2024-06-20 022656](https://github.com/Yogender21505/ImageResize_cuda/assets/104339650/3969e27e-0ea8-4ff9-9910-71ea4d05cfba)
+![Screenshot 2024-06-20 024458](https://github.com/Yogender21505/ImageResize_cuda/assets/104339650/b99e54b0-1941-4d64-8dc4-0a11256e9e3f)
+![Screenshot 2024-06-20 022550](https://github.com/Yogender21505/ImageResize_cuda/assets/104339650/3e87de46-5bef-45c1-91c9-0f0fb4b096c5)
+
 
 After running the script, check the data/output_images/ directory for processed images.
 
-Project Structure
-```bin/:``` Directory for binary/executable code.
-```data/:``` Directory for example data. Contains input_images/ and output_images/.
-```lib/:``` Directory for additional libraries.
-```src/:``` Directory for source code. Contains image_processing.py.
-```README.md:``` This file, providing project overview and instructions.
-```INSTALL:``` Installation instructions for the project.
-```Makefile or CMakeLists.txt or build.sh:``` Scripts for building the project.
-```run.sh:``` Script to run the executable code or scripts.
-References
+## References
 USC SIPI Image Database: Source of sample images used in this project.

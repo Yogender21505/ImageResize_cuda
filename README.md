@@ -44,8 +44,10 @@ This script reads images from data/input_images/, resizes them to 256x256 pixels
 ## Output
 
 Explore Output:
+### Converted image right 256x256
 ![Screenshot 2024-06-20 022656](https://github.com/Yogender21505/ImageResize_cuda/assets/104339650/3969e27e-0ea8-4ff9-9910-71ea4d05cfba)
 ![Screenshot 2024-06-20 024458](https://github.com/Yogender21505/ImageResize_cuda/assets/104339650/b99e54b0-1941-4d64-8dc4-0a11256e9e3f)
+### For Large Input(120 images)
 ![Screenshot 2024-06-20 022550](https://github.com/Yogender21505/ImageResize_cuda/assets/104339650/3e87de46-5bef-45c1-91c9-0f0fb4b096c5)
 
 
